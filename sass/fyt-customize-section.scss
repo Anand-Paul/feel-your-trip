@@ -1,0 +1,36 @@
+.fyt-customize-section {
+  padding: 112px 0;
+  height: 100%;
+  background-image: url("./../assets/images/background-filter-blurred.png");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-color: #fff;
+
+  // &_full-height {
+  //   height: 100%;
+  // }
+
+  &__title {
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+
+    &-text {
+      font-family: "anodinaregular";
+      font-weight: 700;
+      font-size: 36px;
+      color: rgba(#000, 0.87);
+      display: flex;
+      text-transform: capitalize;
+    }
+
+    &-img {
+      display: flex;
+      width: 45px;
+      height: 42px;
+      margin-top: -30px;
+    }
+  }
+}

@@ -1,0 +1,77 @@
+.fyt-select {
+  display: flex;
+  flex-direction: column;
+
+  .input-group {
+    &-prepend {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      background-color: #fff;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      padding: 20px;
+
+      .fyticons-search {
+        font-size: 24px;
+      }
+    }
+
+    .form-control {
+      outline: none;
+      border: none;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      height: 72px;
+      font-family: "anodinaregular";
+      font-size: 24px;
+
+      &:focus,
+      &:focus-visible,
+      &:focus-within {
+        outline: none;
+        box-shadow: none;
+        border: none;
+      }
+    }
+  }
+
+  &-dropdown {
+    margin-top: -8px;
+    padding: 10px 0;
+    background-color: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    &-list {
+      list-style: none;
+
+      &-item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 12px 24px 12px 65px;
+
+        span {
+          display: flex;
+          font-family: "anodinaregular";
+          font-size: 24px;
+          color: rgba(#000, 0.8);
+
+          &:last-child {
+            opacity: 0;
+          }
+        }
+
+        &:hover {
+          background-color: rgba(#3cb5ef, 0.2);
+
+          span:last-child {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

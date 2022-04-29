@@ -1,0 +1,113 @@
+.fyt-month {
+  $root: &;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 400px;
+  max-height: 500px;
+  overflow-y: auto;
+
+  &-card {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 32px 40px;
+    align-items: center;
+    margin-right: 24px;
+    margin-bottom: 50px;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #fff;
+
+    &:hover {
+      text-decoration: none;
+      border: 1px solid #3cb5ef;
+      box-shadow: 0px 2px 6px 7px rgba(0, 0, 0, 0.22);
+      -webkit-box-shadow: 0px 2px 6px 7px rgba(0, 0, 0, 0.22);
+      -moz-box-shadow: 0px 2px 6px 7px rgba(0, 0, 0, 0.22);
+    }
+
+    &-selected {
+      opacity: 0;
+      position: absolute;
+      top: -56px;
+      right: -56px;
+      background-color: #54c7ab;
+      width: 112px;
+      height: 112px;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      justify-content: flex-start;
+      border-radius: 50%;
+      transition: opacity 500ms ease-in-out;
+
+      span {
+        display: flex;
+        color: #fff;
+        padding: 0 0 20px 24px;
+        font-size: 24px;
+      }
+    }
+
+    &_active {
+      border: 1px solid #54c7ab;
+      text-decoration: none;
+
+      #{$root}-card-selected {
+        opacity: 1;
+      }
+    }
+
+    &-title {
+      font-family: "anodinaregular";
+      font-weight: 700;
+      font-size: 48px;
+      color: rgba(#000, 0.9);
+      text-decoration: none;
+    }
+
+    &-weather {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin: 8px 0 16px 0;
+      text-decoration: none;
+
+      span {
+        display: flex;
+        color: rgba(#000, 0.4);
+        text-decoration: none;
+
+        &:first-child {
+          font-size: 20px;
+        }
+
+        &:last-child {
+          font-family: "anodinaregular";
+          font-weight: 700;
+          font-size: 24px;
+          margin-left: 4px;
+        }
+      }
+    }
+
+    &-season {
+      font-family: "anodinaregular";
+      font-weight: 700;
+      font-size: 12px;
+      color: #fff;
+      background-color: #3cb5ef;
+      padding: 2px 6px;
+      border-radius: 4px;
+      text-transform: uppercase;
+
+      &_off {
+        background-color: rgba(#999, 0.4);
+      }
+    }
+  }
+}

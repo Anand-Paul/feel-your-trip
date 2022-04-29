@@ -1,0 +1,76 @@
+$transition-speed: 100ms;
+
+.fyt-customize {
+  $root: &;
+  border: 1px solid #3cb5ef;
+  width: 100%;
+  max-width: 210px;
+  height: 72px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 30px;
+  border-radius: 10px;
+  overflow: hidden;
+  white-space: normal;
+  transition: all $transition-speed ease-in-out;
+
+  &__title {
+    display: flex;
+    max-width: 102px;
+    font-weight: 400;
+    font-size: 20px;
+    color: rgba(#000, 0.87);
+    margin-left: 12px;
+    text-transform: capitalize;
+    font-family: "anodinaregular";
+    transition: all $transition-speed ease-in-out;
+    line-height: 24px;
+  }
+
+  .fyticons-settings-adjust {
+    display: block;
+    font-size: 32px;
+    color: #3cb5ef;
+    transition: all $transition-speed ease-in-out;
+  }
+
+  &:hover {
+    background-color: #3cb5ef;
+    border-color: #3cb5ef;
+
+    .fyticons-settings-adjust {
+      font-size: 32px;
+      color: #fff;
+    }
+
+    #{$root}__title {
+      color: #fff;
+    }
+  }
+
+  &:focus,
+  &:focus-visible,
+  &:focus-within,
+  &:visited,
+  &:active {
+    outline: none;
+    box-shadow: none;
+  }
+
+  @media only screen and (max-width: 768px) {
+    max-width: none;
+    width: auto;
+    height: 48px;
+    padding: 0 14px 0 12px;
+
+    &__title {
+      display: none;
+    }
+
+    .fyticons-settings-adjust {
+      font-size: 24px;
+    }
+  }
+}

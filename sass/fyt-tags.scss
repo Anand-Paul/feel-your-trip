@@ -1,0 +1,72 @@
+.fyt-tag {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 24px 0 14px 0;
+  border-bottom: 1px solid rgba(#000, 0.2);
+
+  &-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(#fff, 0.7);
+    padding: 8px 8px 8px 16px;
+    margin-right: 6px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+
+    & > span:first-child {
+      font-family: "anodinaregular";
+      font-size: 20px;
+      margin-right: 24px;
+    }
+  }
+
+  &-item-close-all {
+    margin-left: auto;
+    margin-bottom: 8px;
+
+    span {
+      font-size: 26px;
+    }
+
+    &:hover {
+      .fyticons-solid-blue-close {
+        opacity: 0.8;
+      }
+    }
+
+    &:focus,
+    &:focus-visible,
+    &:focus-within {
+      box-shadow: none;
+      outline: none;
+    }
+  }
+
+  &-button {
+    outline: none;
+    box-shadow: none;
+    padding: 0;
+    border: none;
+    font-size: 18px;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      .fyticons-solid-black--close {
+        opacity: 0.8;
+      }
+    }
+
+    &:focus,
+    &:focus-visible,
+    &:focus-within {
+      box-shadow: none;
+      outline: none;
+    }
+  }
+}

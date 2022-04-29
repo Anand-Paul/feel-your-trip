@@ -1,0 +1,18 @@
+.fyt-search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.fyt-vertical-divider {
+  display: flex;
+  margin: 0 20px;
+  width: 1px;
+  height: 68px;
+  background-color: rgba(#000, 0.2);
+
+  @media only screen and (max-width: 768px) {
+    height: 42px;
+    margin: 0 10px;
+  }
+}

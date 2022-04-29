@@ -1,0 +1,78 @@
+@font-face {
+  font-family: 'fyticons';
+  src:  url('./fyticons.eot?9v1erf');
+  src:  url('./fyticons.eot?9v1erf#iefix') format('embedded-opentype'),
+    url('./fyticons.ttf?9v1erf') format('truetype'),
+    url('./fyticons.woff?9v1erf') format('woff'),
+    url('./fyticons.svg?9v1erf#fyticons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="fyticons-"], [class*=" fyticons-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'fyticons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fyticons-awake:before {
+  content: "\e900";
+}
+.fyticons-chevron-left .path1:before {
+  content: "\e901";
+  color: rgb(255, 255, 255);
+}
+.fyticons-chevron-left .path2:before {
+  content: "\e902";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.fyticons-chevron-right .path1:before {
+  content: "\e903";
+  color: rgb(255, 255, 255);
+}
+.fyticons-chevron-right .path2:before {
+  content: "\e904";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.fyticons-edit:before {
+  content: "\e905";
+}
+.fyticons-search:before {
+  content: "\e906";
+}
+.fyticons-settings-adjust:before {
+  content: "\e907";
+}
+.fyticons-solid-black--close .path1:before {
+  content: "\e908";
+  color: rgb(245, 245, 245);
+}
+.fyticons-solid-black--close .path2:before {
+  content: "\e909";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.fyticons-solid-blue-close .path1:before {
+  content: "\e90a";
+  color: rgb(245, 245, 245);
+}
+.fyticons-solid-blue-close .path2:before {
+  content: "\e90b";
+  margin-left: -1em;
+  color: rgb(60, 181, 239);
+}
+.fyticons-tick:before {
+  content: "\e90c";
+}

@@ -1,0 +1,88 @@
+.fyt-day {
+  $root: &;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 400px;
+  max-height: 500px;
+  overflow-y: auto;
+
+  &-card {
+    position: relative;
+    overflow: hidden;
+    width: 180px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    padding: 56px 24px 34px 24px;
+    border-radius: 4px;
+    border: 1px solid rgba(#3cb5ef, 0.2);
+    text-decoration: none;
+    background-color: #fff;
+    margin-right: 24px;
+    margin-bottom: 50px;
+
+    &:hover {
+      text-decoration: none;
+      border: 1px solid #3cb5ef;
+      box-shadow: 0px 2px 6px 7px rgba(0, 0, 0, 0.22);
+      -webkit-box-shadow: 0px 2px 6px 7px rgba(0, 0, 0, 0.22);
+      -moz-box-shadow: 0px 2px 6px 7px rgba(0, 0, 0, 0.22);
+    }
+
+    &_active {
+      border: 1px solid #54c7ab;
+      text-decoration: none;
+
+      #{$root}-card-selected {
+        opacity: 1;
+      }
+    }
+
+    &-selected {
+      opacity: 0;
+      position: absolute;
+      top: -56px;
+      right: -56px;
+      background-color: #54c7ab;
+      width: 112px;
+      height: 112px;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      justify-content: flex-start;
+      border-radius: 50%;
+      transition: opacity 500ms ease-in-out;
+
+      span {
+        display: flex;
+        color: #fff;
+        padding: 0 0 20px 24px;
+        font-size: 24px;
+      }
+    }
+
+    &-title {
+      font-family: "anodinaregular";
+      font-weight: 700;
+      font-size: 48px;
+      color: #fff;
+      background-color: #3cb5ef;
+      padding: 5px;
+      text-align: center;
+      border-radius: 4px;
+    }
+
+    &-desc {
+      font-family: "anodinaregular";
+      font-weight: 700;
+      font-size: 24px;
+      color: #000;
+      opacity: 0.4;
+      margin-top: 8px;
+      text-transform: capitalize;
+      text-align: center;
+    }
+  }
+}
