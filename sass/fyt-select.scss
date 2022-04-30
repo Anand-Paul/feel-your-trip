@@ -74,4 +74,33 @@
       }
     }
   }
+
+  @media only screen and (max-width: 768px) {
+    .input-group {
+      &-prepend {
+        padding: 10px;
+
+        .fyticons-search {
+          font-size: 18px;
+        }
+      }
+      .form-control {
+        height: 48px;
+        font-size: 18px;
+        padding: 8px 6px;
+      }
+    }
+
+    &-dropdown {
+      padding: 8px 0;
+      &-list {
+        &-item {
+          padding: 8px 16px;
+          span {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
 }

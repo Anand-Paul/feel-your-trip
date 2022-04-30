@@ -8,10 +8,6 @@
   position: relative;
   background-color: #fff;
 
-  // &_full-height {
-  //   height: 100%;
-  // }
-
   &__title {
     display: flex;
     flex-direction: row;
@@ -31,6 +27,23 @@
       width: 45px;
       height: 42px;
       margin-top: -30px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    padding: 24px 0;
+    &__title {
+      padding-top: 24px;
+
+      &-text {
+        font-size: 26px;
+      }
+
+      &-img {
+        width: 36px;
+        height: 33px;
+        margin-top: -24px;
+      }
     }
   }
 }

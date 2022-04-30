@@ -110,4 +110,48 @@
       }
     }
   }
+
+  @media only screen and (max-width: 768px) {
+    min-height: 350px;
+    max-height: 450px;
+
+    &-card {
+      width: 105px;
+      height: 96px;
+      padding: 16px;
+      margin-right: 12px;
+      margin-bottom: 12px;
+
+      &-selected {
+        width: 56px;
+        height: 56px;
+        span {
+          padding: 0 0 10px 12px;
+          font-size: 12px;
+        }
+      }
+      &-title {
+        font-size: 24px;
+      }
+      &-weather {
+        margin: 4px 0 8px 0;
+
+        span {
+          &:first-child {
+            font-size: 12px;
+          }
+
+          &:last-child {
+            font-size: 12px;
+            margin-left: 2px;
+          }
+        }
+      }
+
+      &-season {
+        font-size: 10px;
+        padding: 2px 4px;
+      }
+    }
+  }
 }

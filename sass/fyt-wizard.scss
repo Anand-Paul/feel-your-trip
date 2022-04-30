@@ -48,17 +48,26 @@
       }
     }
   }
+
+  @media only screen and (max-width: 768px) {
+    &-inner {
+      margin-bottom: 20px;
+      &-indicator {
+        li {
+          margin-right: 8px;
+          a {
+            width: 56px;
+            height: 8px;
+          }
+        }
+      }
+    }
+  }
 }
 
 .wizard-box {
   &-pane {
     position: relative;
-    // transition: opacity 2000ms ease-in-out;
-    // opacity: 0;
-
-    // &.active {
-    //   opacity: 1;
-    // }
 
     &-content {
       padding: 0 68px;
@@ -108,5 +117,29 @@
 
   &-next {
     right: 0;
+  }
+
+  @media only screen and (max-width: 768px) {
+    &-pane {
+      &-content {
+        padding: 0;
+        h4 {
+          font-size: 24px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+    &-next,
+    &-prev {
+      font-size: 28px;
+    }
+
+    &-prev {
+      left: -14px;
+    }
+
+    &-next {
+      right: -14px;
+    }
   }
 }
