@@ -1,0 +1,57 @@
+.fyt-switch-input {
+  display: inline-block;
+  &-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    input {
+      border: none;
+      outline: none;
+      box-shadow: none;
+      background-color: transparent;
+      border-bottom: 2px dashed #000000;
+      color: #fff;
+      font-family: "DINPro";
+      font-weight: 700;
+      font-size: 32px;
+      width: 200px;
+      &[readonly] {
+      }
+    }
+  }
+
+  &-btn {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    span {
+      color: #fff;
+    }
+
+    .fyticons-edit {
+      padding-top: 4px;
+    }
+
+    &:focus,
+    &:focus-visible,
+    &:focus-within {
+      border: none;
+      outline: none;
+      box-shadow: none;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    &-box {
+      input {
+        font-size: 24px;
+      }
+    }
+  }
+}

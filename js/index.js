@@ -55,5 +55,17 @@ function wizard() {
   $(document).ready(function () {
     // customizeSection();
     wizard();
+
+    $(".fyt-switch-input-btn_save").click(function () {
+      $(".fyt-switch-input-btn_edit").removeClass("d-none");
+      $(this).addClass("d-none");
+    });
+
+    $(".fyt-switch-input-btn_edit").click(function () {
+      $(this).addClass("d-none");
+      $(".fyt-switch-input-btn_save").removeClass("d-none");
+      $(".fyt-switch-input-target").removeAttr("readonly");
+      $(".fyt-switch-input-target").focus();
+    });
   });
 })();
